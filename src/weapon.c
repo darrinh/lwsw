@@ -9786,9 +9786,9 @@ DoMine(SHORT Weapon)
 
                 if (TEST(wall[hitwall].extra, WALLFX_DONT_STICK))
                     {
-                    SpawnMineExp(Weapon);
-                    KillSprite(Weapon);
-                    return(FALSE);
+                 //   SpawnMineExp(Weapon);
+                  //  KillSprite(Weapon);
+                  //  return(FALSE);
                     }
 
                 break;
@@ -20482,12 +20482,12 @@ BOOL TestDontStick(short SpriteNum, short hitsect, short hitwall, int hitz)
 
     wp = &wall[hitwall];
 
-    if (TEST(wp->extra, WALLFX_DONT_STICK))
-        return(TRUE);
-
+   // if (TEST(wp->extra, WALLFX_DONT_STICK))
+       // return(TRUE);
+          
     // if blocking red wallo
-    if (TEST(wp->cstat, CSTAT_WALL_BLOCK) && wp->nextwall >= 0)
-        return(TRUE);
+   // if (TEST(wp->cstat, CSTAT_WALL_BLOCK) && wp->nextwall >= 0)
+       // return(TRUE);
 
     return(FALSE);
     }
@@ -20495,7 +20495,7 @@ BOOL TestDontStick(short SpriteNum, short hitsect, short hitwall, int hitz)
 BOOL TestDontStickSector(short hitsect)
     {
     if (TEST(sector[hitsect].extra, SECTFX_DYNAMIC_AREA|SECTFX_SECTOR_OBJECT))
-        return(TRUE);
+      //  return(TRUE);
 
     return(FALSE);
     }

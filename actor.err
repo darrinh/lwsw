@@ -1,0 +1,2 @@
+jfbuild\include\compat.h(17): Error! E1091: Requires a C99 compiler
+jfbuild\include\compat.h(96): Error! E1100: Definition of macro 'INT64_C' not identical to previous definition
