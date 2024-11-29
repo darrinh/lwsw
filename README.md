@@ -1,3 +1,11 @@
+Shadow Warrior WangBang edition
+===============================
+By Darrin Hodges (from fork of JonoF's port)
+
+Changes
+-------
+* Allow stickbomb placement on any surface.
+
 JonoF's Shadow Warrior Port
 ===========================
 by Jonathon Fowler, with contributions by Ken Silverman and others

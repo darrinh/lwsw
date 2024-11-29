@@ -9783,7 +9783,7 @@ DoMine(SHORT Weapon)
                 if (TEST(wall[hitwall].extra, WALLFX_SECTOR_OBJECT))
                     {
                     }
-
+                //Disabled to allow stickybomb placement anyway
                 if (TEST(wall[hitwall].extra, WALLFX_DONT_STICK))
                     {
                  //   SpawnMineExp(Weapon);
@@ -20481,7 +20481,7 @@ BOOL TestDontStick(short SpriteNum, short hitsect, short hitwall, int hitz)
         }
 
     wp = &wall[hitwall];
-
+    // Disable to allow placement of stickybombs anywhere
    // if (TEST(wp->extra, WALLFX_DONT_STICK))
        // return(TRUE);
           
