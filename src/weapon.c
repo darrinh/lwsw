@@ -9073,7 +9073,8 @@ DoGrenade(SHORT Weapon)
                             InitPhosphorus(Weapon);
                         }
                     }
-                    SpawnGrenadeExp(Weapon);
+                    //SpawnGrenadeExp(Weapon);
+                    SpawnNuclearExp(Weapon);
                     KillSprite((short) Weapon);
                     return (TRUE);
                     }
@@ -9145,7 +9146,8 @@ DoGrenade(SHORT Weapon)
                                         InitPhosphorus(Weapon);
                                     }
                                 }
-                                SpawnGrenadeExp(Weapon);
+                                //SpawnGrenadeExp(Weapon);
+                                SpawnNuclearExp(Weapon);
                                 KillSprite((short) Weapon);
                                 return (TRUE);
                                 }
@@ -9189,7 +9191,8 @@ DoGrenade(SHORT Weapon)
                                 }
                             }
                             //WeaponMoveHit(Weapon);
-                            SpawnGrenadeExp(Weapon);
+                           // SpawnGrenadeExp(Weapon);
+                            SpawnNuclearExp(Weapon);
                             KillSprite((short) Weapon);
                             return (TRUE);
                             }
@@ -9209,7 +9212,8 @@ DoGrenade(SHORT Weapon)
 
     if (u->bounce > 10)
         {
-        SpawnGrenadeExp(Weapon);
+        SpawnNuclearExp(Weapon);
+        //SpawnGrenadeExp(Weapon);
         KillSprite(Weapon);
         return (TRUE);
         }
