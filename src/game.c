@@ -3478,7 +3478,7 @@ int app_main(int argc, char const * const argv[])
     );
     SetupOSDCommands();
 
-    wm_setapptitle("JFShadowWarrior");
+    wm_setapptitle("ShadowWarrior - Wangbang Edition");
     buildprintf("\nJFShadowWarrior\n"
         "Based on Shadow Warrior by 3D Realms Entertainment.\n"
         "Additional improvements by Jonathon Fowler (http://www.jonof.id.au) and other contributors.\n"
