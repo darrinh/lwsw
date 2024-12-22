@@ -9073,8 +9073,8 @@ DoGrenade(SHORT Weapon)
                             InitPhosphorus(Weapon);
                         }
                     }
-                    SpawnGrenadeExp(Weapon);
-                    //SpawnNuclearExp(Weapon);
+                    //SpawnGrenadeExp(Weapon);
+                    SpawnNuclearExp(Weapon);
                     KillSprite((short) Weapon);
                     return (TRUE);
                     }
@@ -9146,8 +9146,8 @@ DoGrenade(SHORT Weapon)
                                         InitPhosphorus(Weapon);
                                     }
                                 }
-                                SpawnGrenadeExp(Weapon);
-                                //SpawnNuclearExp(Weapon);
+                                //SpawnGrenadeExp(Weapon);
+                                SpawnNuclearExp(Weapon);
                                 KillSprite((short) Weapon);
                                 return (TRUE);
                                 }
@@ -9191,8 +9191,8 @@ DoGrenade(SHORT Weapon)
                                 }
                             }
                             //WeaponMoveHit(Weapon);
-                            SpawnGrenadeExp(Weapon);
-                            //SpawnNuclearExp(Weapon);
+                            //SpawnGrenadeExp(Weapon);
+                            SpawnNuclearExp(Weapon);
                             KillSprite((short) Weapon);
                             return (TRUE);
                             }
@@ -9212,8 +9212,8 @@ DoGrenade(SHORT Weapon)
 
     if (u->bounce > 10)
         {
-        //SpawnNuclearExp(Weapon);
-        SpawnGrenadeExp(Weapon);
+        SpawnNuclearExp(Weapon);
+        //SpawnGrenadeExp(Weapon);
         KillSprite(Weapon);
         return (TRUE);
         }
@@ -9632,8 +9632,8 @@ DoMineStuck(SHORT Weapon)
             if (u->WaitTics < 0)
                 {
                 PlaySound(DIGI_MINEBEEP, &sp->x, &sp->y, &sp->z, v3df_dontpan);
-                SpawnNuclearExp(Weapon);
-                //SpawnMineExp(Weapon);
+               
+                SpawnMineExp(Weapon);
                 KillSprite(Weapon);
                 return(FALSE);
                 }
@@ -9761,8 +9761,8 @@ DoMine(SHORT Weapon)
                         }
                     else
                         {
-                        //SpawnMineExp(Weapon);
-                        SpawnNuclearExp(Weapon);
+                        SpawnMineExp(Weapon);
+                        
                         KillSprite(Weapon);
                         return(FALSE);
                         }
@@ -9815,8 +9815,8 @@ DoMine(SHORT Weapon)
 
                 if (TEST(sector[hitsect].extra, SECTFX_SECTOR_OBJECT))
                     {
-                    //SpawnMineExp(Weapon);
-                    SpawnNuclearExp(Weapon);
+                    SpawnMineExp(Weapon);
+                   
                     KillSprite(Weapon);
                     return(FALSE);
                     }
