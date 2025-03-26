@@ -8065,6 +8065,7 @@ DoStar(SHORT Weapon)
 
         if (sp->z > u->loz)
             {
+            SpawnNuclearExp(Weapon);
             KillSprite(Weapon);
             return (TRUE);
             }
@@ -8158,7 +8159,8 @@ DoStar(SHORT Weapon)
                     {
                     if (SectUser[hitsect] && MSW(SectUser[hitsect]->depth_fixed) > 0)
                         {
-                        SpawnSplash(Weapon);
+                        //SpawnSplash(Weapon);
+                        SpawnNuclearExp(Weapon);
                         KillSprite(Weapon);
                         return (TRUE);
                         // hit water - will be taken care of in WeaponMoveHit
@@ -8251,6 +8253,7 @@ DoStar(SHORT Weapon)
 
         if (WeaponMoveHit(Weapon))
             {
+            SpawnNuclearExp(Weapon);
             KillSprite(Weapon);
             return (TRUE);
             }
