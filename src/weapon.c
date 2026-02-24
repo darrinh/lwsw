@@ -10283,15 +10283,18 @@ DoRocket(SHORT Weapon)
         {
         if (WeaponMoveHit(Weapon) && u->ret)
             {
-            if(u->ID == BOLT_THINMAN_R4)
-                {
-                SpawnBunnyExp(Weapon);
-                } else
-            if(u->Radius == NUKE_RADIUS)
-                SpawnNuclearExp(Weapon);
-            else
-                SpawnBoltExp(Weapon);
-
+                        
+            //heatseak explostion?
+            //if(u->ID == BOLT_THINMAN_R4)
+             //   {
+                //SpawnBunnyExp(Weapon);
+            //  } else
+            //if(u->Radius == NUKE_RADIUS)
+             //   SpawnNuclearExp(Weapon);
+            //else
+              //  SpawnBoltExp(Weapon);
+             
+            SpawnNuclearExp(Weapon);
             KillSprite((short) Weapon);
             return (TRUE);
             }
